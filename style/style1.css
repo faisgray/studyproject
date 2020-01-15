@@ -1,0 +1,357 @@
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    background-image:linear-gradient(120deg,rgb(33, 133, 80),rgb(138, 197, 99));
+    background-position-y:100%;
+    background-size:cover;
+    
+}
+.Wholepagecontainer{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#logoContainer{
+    padding:10px 0px 20px 0px;
+    margin-bottom:5px;
+    transition:padding 0.3s;
+    
+}
+#logo{
+    display:block;
+    margin:10px auto;
+    text-align:center;
+}
+#LoginForm{
+overflow:hidden;
+transition:height .5s ease-in-out,opacity .3s ease-in-out;
+height:230px;
+}
+
+/* errordiv e.g.cookies */
+.errordiv{
+    margin:7px auto 0px;
+     width:260px;
+border:1px solid rgb(219,91, 91);
+background-color:rgb(241, 189, 189);
+padding:10px;
+box-sizing:border-box;
+}
+.errordiv h3{
+    margin:0px auto;
+}
+
+
+/* forms container */
+/*--------------styling form inputs-----------*/
+.fieldsets{
+    width:fit-content;
+    margin:2px auto;
+    
+}
+.infl{
+    font-size:19px;
+    letter-spacing:1px;
+    color:white;
+    
+}
+/* for all input fields */
+.infb{
+    position:relative;
+    box-sizing:border-box;
+    }
+    #pscntnr{
+width:fit-content;
+margin:0px auto;
+    }
+    /* password unhide */
+    #puh,#puh2{
+        /* display:inline-block; */
+        border-radius:0 4px 4px 0;
+        width:fit-content;
+        float:right;
+        background-color:white;
+        border:1px solid rgb(202, 202, 202);
+    }
+    /* image container */
+    #sym,#sym2{
+        padding: 10px 11px 9px;    
+        overflow:hidden;
+    }
+  
+.inf{
+    /* box-sizing:border-box; */
+   font-size:20px;
+   letter-spacing:1px;
+    display:block;
+    border:1px solid rgb(202, 202, 202);
+    border-radius:4px;
+    padding:7px 8px;
+    margin:10px auto;
+    color:black;
+    outline:none;
+    width:260px;
+    background:rgb(255, 255, 255);   
+}
+/* input for password singup */
+#sgp{
+width:218px;
+margin:0;
+display:inline-block;
+border-radius:4px 0 0 4px;
+}
+.inf:focus{
+    border:1px solid rgb(228, 149, 22);
+}
+#LoginForm .inf{
+    font-size:15px;
+}
+
+#fp{
+ text-align:right;
+ margin-left:30px;   
+}
+#fp a{
+    text-decoration:none;
+    color:white;
+    letter-spacing:1px;
+    font-size:15px;
+    
+
+}
+/* botton Login Signup */
+.button{
+    display:block;
+    margin:15px auto;
+    border:none;
+    font-size:17px;
+    padding:10px 30px;
+    border-radius:4px;   
+}
+.button:hover{
+    background-color:rgb(82, 82, 82);
+}
+
+
+
+/* signUp formatting---------------- */
+
+/* sign up form heading */
+.sfh{
+    margin:0px auto;
+    width:fit-content;
+    font-size:30px;
+    padding:8px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;   
+}
+  ._signupContainer{
+      box-sizing:border-box;  
+}
+
+/* error tooltip */
+/* input field container contained tooltip */
+
+.infb .tooltip{
+background-color:rgb(199, 59, 59);
+position:absolute;
+bottom:130%;
+max-width:200px;
+visibility:hidden;
+opacity:0;
+transition:opacity 0.3s;
+cursor: default;
+border-radius:4px;
+}
+/* exception for password */
+.infb #pscntnr .tooltip{
+    bottom:128%;
+}
+
+.inf:focus+ .tooltip{
+    visibility:visible;
+    opacity:1;
+}
+
+/* tooltiptext */
+.infb .tooltip .tttxt{
+    /* border:1px solid rgb(228, 149, 22);  */
+ color:white;
+ word-wrap: break-word;
+ 
+ padding:8px;
+ font-size:16px;
+ letter-spacing:1px;
+ -webkit-font-smoothing: antialiased;
+ font-family:Arial, Helvetica, sans-serif;
+ /* text-align:center; */
+}
+.infb .tooltip .tttxt:empty{
+    padding:0px;
+    display:none;
+}
+
+.infb .tooltip .downwardarrow{
+display:inline-block;
+/* background-color:rgb(233, 160, 4); */
+background-color:rgb(199, 59, 59);
+padding:4px;
+transform:rotate(45deg);
+position: absolute;
+left:20%;
+bottom:-4px;
+border-bottom:1px solid rgb(219, 126, 4);
+border-right:1px solid rgb(219,126,4);
+}
+.tttxt:empty+ .downwardarrow{
+    display:none;
+}
+
+/*gap email (fieldset of signup)*/
+ ._e{
+     margin-top:20px;
+ }
+/* block contained signupform */
+  #SignupForm{
+    overflow:hidden;
+    transition:height .5s ease-in-out,opacity .3s ease-in-out;
+    height:0px;
+  }
+/* *******signupFormButtons****** */
+
+
+/* signup container button content */
+    #supfbtn{
+        
+        overflow:hidden;
+        transition:all 0.3s;
+        outline:none;
+        border:none;
+        padding:7px 10px;
+        color:rgb(61, 61, 61);
+        background-image:linear-gradient(30deg,rgb(233, 160, 4),rgb(241, 117, 79));
+        letter-spacing:2px;
+        font-weight:bold;
+        font-size:16px;
+        border-radius:4px;
+        display:block;
+        margin:5px auto;
+    }
+    
+    #buttontxt{
+        display:inline-block;
+width:240px;
+font-size:20px;
+    }
+  #dirB{
+      font-weight:bold;
+      font-size:20px;
+      width:fit-content;
+      padding:3px 5px;
+      border-radius:17px;
+      color:white;
+      transform: rotate(-90deg);
+      transition:transform 0.6s ease;
+      display:inline-block;
+      position:relative;
+      right:0;
+
+  }
+  /* continue with google */
+  #cwgc{
+      /* border:1px solid rgb(163, 163, 163); */
+     width:fit-content;
+      margin:0px auto;
+      padding:2px;
+      background-color:white;
+      cursor: default;
+      border:1px solid rgb(175, 175, 175);
+  }
+  #cwg{
+      padding:8px;
+      overflow:hidden;
+      display:inline-block;
+      font-size:20px;
+    
+  }
+  #Sgnpform{
+      margin-top:10px;
+      width:fit-content;
+      margin:10px auto;
+  }
+  /* cwg google logo */
+  #gl{
+      display:inline-block;
+    background-image:url(images/google.png);
+    background-size: cover;
+    background-position: center;
+    width:45px;
+    height:41px;
+  }
+  /* too support many of displays */
+@media all and (min-width:425px){
+body{
+    background-image:linear-gradient(260deg,rgb(255, 255, 255),rgb(199, 199, 199));
+}
+    .wholepagecontainer{
+        display:flex;
+        align-items: center;
+       height:100%;
+       border:1px solid black;
+        justify-content:space-around;
+   
+        
+        
+    }
+    #entryContent{
+        /* background-color:rgb(245, 244, 244);
+       border:1px solid rgb(240, 163, 39); */
+        border-radius:6px;
+        width:270px;
+    }
+    .errordiv{
+        margin:0px;
+    }
+    /* form controls */
+    .sfh{
+        color:black;
+    font-size:20px;}
+    /* password unhide */
+#sym{
+    padding:7px;
+}
+    .infl{
+        color:rgb(51, 51, 51);
+    }
+    .inf{
+        width:260px;
+        font-size:16px;
+    }
+    /* forget password */
+    #fp a{
+        color:rgb(58, 58, 58);
+    }
+
+
+    /* Signup control */
+
+    /*signup button  */
+    #buttontxt{
+width:200px;
+font-size:16px;
+    }
+    /* continue with google */
+    .infb .tooltip .tttxt{
+        font-size:12px;  
+}
+#sgp{
+    width:226px;
+}
+
+
+}
